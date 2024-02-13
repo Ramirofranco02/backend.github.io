@@ -42,15 +42,13 @@ class ProductManager {
     }
 }
 
-// Ejemplo de uso
-// Crear instancias de productos
-const product1 = new Product("Producto A", "Descripción A", 29.99, "imagen_a.jpg", 1, 50);
-const product2 = new Product("Producto B", "Descripción B", 49.99, "imagen_b.jpg", 2, 30);
-const product3 = new Product("Producto C", "Descripción C", 19.99, "imagen_c.jpg", 3, 20);
-
 // Crear un gestor de productos
 const productManager = new ProductManager();
 
+// Crear instancias de productos y agregarlos al gestor
+const product1 = new Product("Producto A", "Descripción A", 29.99, "imagen_a.jpg", 1, 50);
+const product2 = new Product("Producto B", "Descripción B", 49.99, "imagen_b.jpg", 2, 30);
+const product3 = new Product("Producto C", "Descripción C", 19.99, "imagen_c.jpg", 3, 20);
 
 productManager.addProduct(product1);
 productManager.addProduct(product2);
